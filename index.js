@@ -136,7 +136,7 @@ lista.forEach(function(value) {
     })
     
     document.body.appendChild(divElement);
-
+    
     divs.push(divElement);
 });
 
@@ -147,4 +147,5 @@ divs.forEach(function(div) {
     externDiv.appendChild(div)
 });
 
-document.body.appendChild(externDiv);
+let divContainer = document.getElementById('divContainer');
+divContainer.appendChild(externDiv);
