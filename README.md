@@ -15,7 +15,7 @@ An application that helps you to build new projects and with many ideas
 
 ### Screenshot 📲
 
-![](./assets/devfrontchallengesFullScreenshot.png)
+![](./assets/devfrontchallengesScreenshot.png)
 
 You can see this one, it's my solution and i liked to make it.👋
 
