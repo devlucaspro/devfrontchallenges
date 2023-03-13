@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans&family=Poppins&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #DEDEDE;
+    color: #080808;
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-block: 2rem;
+}
+
+h2 {
+    line-height: 3rem;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-block: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #c95353;
+}
+
+a:hover {
+    filter: saturate(150%);
+}
+
+.btnVoltar {
+    border: 1px solid #c95353;
+    padding: 10px 15px;
+}
+
+.btnVoltar:hover {
+    background-color: #c95353;
+    color: #DEDEDE;
+}
