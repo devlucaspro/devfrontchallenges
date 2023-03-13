@@ -1,16 +1,6 @@
 # devfrontchallenges - Front End Challenges
 An application that helps you to build new projects and with many ideas
 
-## Table of contents 🧑‍💻
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-
-
 ## Overview 👋
 
 ### Screenshot 📲
