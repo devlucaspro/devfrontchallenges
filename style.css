@@ -33,21 +33,8 @@ body {
     background-color: var(--gray);
 }
 
-.border {
-    border: 2px solid var(--gray);
-    border-radius: 26px;
-    width: 98vw;
-    height: 97vh;
-    margin-top: 10px;
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: -9999;
-}
-
 .gradient {
-    background: #FFBE2E;
+    background: #38ed46;
     filter: blur(100px);
     width: 150px;
     height: 150px;
@@ -57,7 +44,7 @@ body {
 }
 
 .gradient2 {
-    background: #FFBE2E;
+    background: #2e78ff;
     filter: blur(100px);
     width: 150px;
     height: 150px;
@@ -81,6 +68,7 @@ h1 {
     font-weight: 700;
     font-size: 80px;
     line-height: 80px;
+    user-select: none;
 }
 
 p {
@@ -109,7 +97,7 @@ header img {
 
 #menuBtn {
     background: transparent;
-    color: var(--gray);
+    color: var(--white);
     border: none;
     position: fixed;
     right: 50px;
@@ -130,7 +118,13 @@ header img {
 }
 
 #cta h1 {
-    padding-inline: 15px;
+    padding-inline: 40px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+#cta h1 span {
+    color: #FFBE2E;
 }
 
 #cta p {
@@ -295,6 +289,11 @@ nav div {
     gap: 40px;
 }
 
+.headerPop h2 {
+    order: 2;
+    padding-inline: 10px;
+}
+
 .popUp {
     position: fixed;
     top: 50%;
@@ -303,8 +302,8 @@ nav div {
     background-color: var(--second-black);
     border: 2px solid var(--gray);
     border-radius: 26px;
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,12 +312,17 @@ nav div {
 }
 
 .btnClose {
+    display: flex;
     background-color: transparent;
-    color: var(--white);
-    font-weight: bold;
-    align-self: end;
+    color: #d63f3f;
+    padding: 5px;
     border: none;
     cursor: pointer;
+    order: 1;
+}
+
+.btnClose:hover {
+    color: #d82e2e;
 }
 
 .capaPopUp {
@@ -339,7 +343,7 @@ nav div {
 }
 
 .btnProject {
-    border: 2px solid #DEDEDE;
+    border: 2px solid #FFBE2E;
     border-radius: 20px;
     font-weight: 500;
     font-size: 20px;
@@ -349,7 +353,7 @@ nav div {
 }
 
 .btnProject:hover {
-    background: var(--white);
+    background: #FFBE2E;
     color: var(--black);
 }
 
@@ -414,6 +418,76 @@ nav div {
     background: var(--white);
     color: var(--black);
 }
+
+
+/* techs */
+.html {
+    position: relative;
+    bottom: -200px;
+    color: #080808;
+    margin-inline: 5px;
+    padding: 5px;
+    background-color: #38edb1;
+}
+.css {
+    position: relative;
+    bottom: -200px;
+    color: #080808;
+    margin-inline: 5px;
+    padding: 5px;
+    background-color: #3880ed;
+}
+.js {
+    position: relative;
+    bottom: -200px;
+    color: #080808;
+    margin-inline: 5px;
+    padding: 5px;
+    background-color: #edea38;
+}
+.api {
+    position: relative;
+    bottom: -200px;
+    color: #080808;
+    margin-inline: 5px;
+    padding: 5px;
+    background-color: #ed8938;
+}
+
+/* menuBTN */
+.fa-4x {
+    font-size: 3em !important;
+}
+
+.btnIconClose {
+    display: block;
+    border-top: 3px solid;
+    width: 30px;
+    position: relative;
+    transition: .4s;
+}
+.btnIconClose::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    top: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: .4s;
+}
+
+.btnIconClose:hover {
+    transform: rotate(45deg);
+}
+.btnIconClose:hover::after {
+    transform: rotate(-90deg);
+    top: -8px;
+    left: 0px;
+}
+
+
 
 
 
@@ -490,13 +564,14 @@ nav div {
     }
 
     .fa-4x {
-        font-size: 3em;
+        font-size: 2.7em !important;
     }
 }
 
 @media (min-width: 1400px) and (max-width: 1500px) {
     #cta {
         margin-top: 100px;
+        margin-bottom: 120px;
     }
 
     .boxProjects {

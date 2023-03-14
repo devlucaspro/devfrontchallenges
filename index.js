@@ -17,45 +17,51 @@ btn.addEventListener('click', () => {
 let lista = [
     {
         nome: 'Advice Generator',
-        capa: './assets/adviceGenerator.png',
+        capa: './assets/advice-generator.png',
         dificuldade: 'Fácil',
         localProjeto: 'https://advicegenerator-devlucas.netlify.app/',
-        descricao: 'Um Gerador de conselhos consumindo uma API, advice API, você clica no botão e o conselho muda de forma dinâmica. - HTML, CSS, JS, API'
+        descricao: 'Um Gerador de conselhos consumindo uma API, advice API, você clica no botão e o conselho muda de forma dinâmica. - HTML, CSS, JS, API',
+        tech: 'HTML, CSS, JS, API',
     },
     {
         nome: 'Card Details',
-        capa: './assets/cardProject.jpeg',
+        capa: './assets/cardDetails.png',
         dificuldade: 'Intermediário',
         localProjeto: 'https://card-details-devlucas.netlify.app/',
-        descricao: 'Um formulário com atualização em tempo real dos dados preenchidos, o usuário deve receber uma mensagem de erro quando algum input estiver faltando ou quando for preenchido com formato errado, você irá treinar muito suas habilidades em DOM no Javascript. - HTML, CSS, JS'
+        descricao: 'Um formulário com atualização em tempo real dos dados preenchidos, o usuário deve receber uma mensagem de erro quando algum input estiver faltando ou quando for preenchido com formato errado, você irá treinar muito suas habilidades em DOM no Javascript. - HTML, CSS, JS',
+        tech: 'HTML, CSS, JS',
     },
     {
         nome: 'Portfolio',
         capa: './assets/portfolioDesign.png',
         dificuldade: 'Fácil',
         localProjeto: '',
-        descricao: 'Um modelo de Portfólio para treinar suas habilidades Front-End, você pode ir além e desenvolver o Portfólio inteiro se quiser, Boa sorte! - HTML, CSS, JS'
+        descricao: 'Um modelo de Portfólio para treinar suas habilidades Front-End, você pode ir além e desenvolver o Portfólio inteiro se quiser, Boa sorte! - HTML, CSS, JS',
+        tech: 'HTML, CSS, JS',
     },
     {
         nome: 'Dev Links',
         capa: './assets/devLinksDesign.png',
         dificuldade: 'Fácil',
         localProjeto: '',
-        descricao: 'Teste suas habilidades de layout construindo esse Projeto, um site onde tem seus links de serviço ou pessoais. - HTML, CSS'
+        descricao: 'Teste suas habilidades de layout construindo esse Projeto, um site onde tem seus links de serviço ou pessoais. - HTML, CSS',
+        tech: 'HTML, CSS',
     },
     {
         nome: 'UIcode Website',
         capa: './assets/UIcodeDesign.png',
         dificuldade: 'Fácil',
         localProjeto: '',
-        descricao: 'Um Website com intuito de vender um produto digital, com diversas seções sobre o produto. - HTML, CSS, JS'
+        descricao: 'Um Website com intuito de vender um produto digital, com diversas seções sobre o produto. - HTML, CSS, JS',
+        tech: 'HTML, CSS, JS',
     },
     {
         nome: 'To Do App',
         capa: './assets/ToDoApp.png',
         dificuldade: 'Fácil',
         localProjeto: '',
-        descricao: 'Um To Do App que possibilita o usuário criar novas tarefas, excluir e ordenar de A-Z. - HTML, CSS, JS, LocalStorage'
+        descricao: 'Um To Do App que possibilita o usuário criar novas tarefas, excluir e salvar em LocalStorage. - HTML, CSS, JS, LocalStorage',
+        tech: 'HTML, CSS, JS',
     },
 ]
 
@@ -67,12 +73,36 @@ lista.forEach(function(value) {
     let divElement = document.createElement('div');
     let h2Element = document.createElement('h2');
     let pElement = document.createElement('p');
+    let smallElement = document.createElement('small');
+    let techArray = value.tech.split(', ');
     
     divElement.appendChild(h2Element);
     divElement.appendChild(pElement);
+    divElement.appendChild(smallElement);
     
     h2Element.innerHTML = value.nome
     pElement.innerHTML = value.dificuldade
+
+
+    techArray.forEach((tech) => {
+        let spanElement = document.createElement('span');
+        spanElement.innerHTML = tech
+
+        if(tech === 'HTML'){
+            spanElement.classList.add('html')
+        }
+        if(tech === 'CSS'){
+            spanElement.classList.add('css')
+        }
+        if(tech === 'JS'){
+            spanElement.classList.add('js')
+        }
+        if(tech === 'API'){
+            spanElement.classList.add('api')
+        }
+
+        smallElement.appendChild(spanElement);
+    })
 
     if(value.dificuldade === 'Fácil') {
         pElement.style.color = 'rgb(60, 211, 140)'
@@ -112,7 +142,7 @@ lista.forEach(function(value) {
         a.classList.add('btnProject');
 
         h2.innerHTML = value.nome
-        btn.innerHTML = '<i class="fa-regular fa-circle-xmark fa-2x"></i>'
+        btn.innerHTML = '<span class="btnIconClose"></span>'
         btn.title = 'Fechar'
         capa.src = value.capa
         descricao.innerHTML = value.descricao
