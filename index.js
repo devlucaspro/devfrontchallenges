@@ -57,10 +57,10 @@ let lista = [
     },
     {
         nome: 'To Do App',
-        capa: './assets/ToDoApp.png',
+        capa: './assets/Todoapp.png',
         dificuldade: 'Fácil',
-        localProjeto: '',
-        descricao: 'Um To Do App que possibilita o usuário criar novas tarefas, excluir e salvar em LocalStorage. - HTML, CSS, JS, LocalStorage',
+        localProjeto: 'https://checktododevlucas.netlify.app/',
+        descricao: 'Um To Do App que possibilita o usuário criar novas tarefas, excluir e salvar em LocalStorage, com um footer dinâmico que aparece somente quando há algum item no LocalStorage. - HTML, CSS, JS, LocalStorage',
         tech: 'HTML, CSS, JS',
     },
 ]
