@@ -51,7 +51,7 @@ let lista = [
         nome: 'UIcode Website',
         capa: './assets/UIcodeDesign.png',
         dificuldade: 'Fácil',
-        localProjeto: '',
+        localProjeto: 'https://uicode.netlify.app/',
         descricao: 'Um Website com intuito de vender um produto digital, com diversas seções sobre o produto. - HTML, CSS, JS',
         tech: 'HTML, CSS, JS',
     },
