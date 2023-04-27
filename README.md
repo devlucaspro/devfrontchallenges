@@ -9,17 +9,12 @@ PT-BR: Uma aplicação que ajuda e oferece projetos e desafios para Desenvolvedo
 
 ![](./assets/screenshot.png)
 
-You can see this one, it's my solution and i liked to make it.👋
-
-
 ### Links ☕
 
 - Repository link: [https://github.com/devlucaspro/devfrontchallenges](https://github.com/devlucaspro/devfrontchallenges)
 - Live Site URL: [https://devfrontchallenges.netlify.app/](https://devfrontchallenges.netlify.app/)
 
-## My process 🔥
-
-### Built with
+### Built with 🔥
 
 - Semantic HTML5 markup
 - CSS
@@ -30,7 +25,7 @@ You can see this one, it's my solution and i liked to make it.👋
 
 ## Author 👋
 
-I'm Front End Web developer and UI Designer, you can see more about me on these links below.
+I'm Front End Web developer, you can see more about me on these links below.
 
 - Portfolio - [Lucas Ribeiro](https://lucasdeveloper.netlify.app/)
 - Frontend Mentor - [@devlucaspro](https://www.frontendmentor.io/profile/devlucaspro)
